@@ -1,0 +1,81 @@
+﻿<h1>Список Пользователей</h1>
+<input type="button" value="Добавить" class="btn btn-default" (click)="add()" />
+<table *ngIf="tableMode; else create" class="table table-striped">
+    <thead>
+        <tr>
+            <td>Имя</td>
+            <td>Фамилия</td>
+            <td>Телефон</td>
+            <td>Адрес</td>
+            <td>Пол</td>
+            <td></td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of users">
+            <ng-template [ngIf]="user?.id != p.id" [ngIfElse]="edit">
+                <td>{{p?.name}}</td>
+                <td>{{p?.surname}}</td>
+                <td>{{p?.telephone}}</td>
+                <td>{{p?.address}}</td>
+                <td>{{p?.sex}}</td>
+                <td>
+                    <button class="btn btn-sm btn-primary" (click)="editUser(p)">Изменить</button>
+                    <button class="btn btn-sm btn-danger" (click)="delete(p)">Удалить</button>
+                </td>
+            </ng-template>
+        </tr>
+    </tbody>
+</table>
+
+<!--шаблон для редактирования-->
+<ng-template #edit>
+    <td>
+        <input type="text" [(ngModel)]="user.name" class="form-control" />
+    </td>
+    <td>
+        <input type="text" [(ngModel)]="user.surname" class="form-control" />
+    </td>
+    <td>
+        <input type="text" [(ngModel)]="user.telephone" class="form-control" />
+    </td>
+    <td>
+        <input type="text" [(ngModel)]="user.address" class="form-control" />
+    </td>
+    <td>
+        <input type="text" [(ngModel)]="user.sex" class="form-control" />
+    </td>
+    <td>
+        <input type="button" value="Сохранить" (click)="save()" class="btn btn-sm btn-success" />
+        <input type="button" value="Отмена" (click)="cancel()" class="btn btn-sm btn-warning" />
+    </td>
+</ng-template>
+
+<!--шаблон для добавления-->
+<ng-template #create>
+    <div class="form-group">
+        <label>Имя</label>
+        <input type="text" [(ngModel)]="user.name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Фамилия</label>
+        <input type="text" [(ngModel)]="user.surname" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Телефон</label>
+        <input type="text" [(ngModel)]="user.telephone" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Адрес</label>
+        <input type="text" [(ngModel)]="user.address" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Пол</label>
+        <input type="text" [(ngModel)]="user.sex" class="form-control" />
+    </div>
+
+    <div>
+        <input type="button" value="Сохранить" (click)="save()" class="btn btn-success" />
+        <input type="button" value="Отмена" (click)="cancel()" class="btn btn-warning" />
+    </div>
+</ng-template>

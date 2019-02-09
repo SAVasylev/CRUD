@@ -1,0 +1,14 @@
+C:\Users\User\Documents\GitHUD\CRUD\CRUD\bin\Debug\netcoreapp2.2\CRUD.deps.json
+C:\Users\User\Documents\GitHUD\CRUD\CRUD\bin\Debug\netcoreapp2.2\CRUD.runtimeconfig.json
+C:\Users\User\Documents\GitHUD\CRUD\CRUD\bin\Debug\netcoreapp2.2\CRUD.runtimeconfig.dev.json
+C:\Users\User\Documents\GitHUD\CRUD\CRUD\bin\Debug\netcoreapp2.2\CRUD.dll
+C:\Users\User\Documents\GitHUD\CRUD\CRUD\bin\Debug\netcoreapp2.2\CRUD.pdb
+C:\Users\User\Documents\GitHUD\CRUD\CRUD\obj\Debug\netcoreapp2.2\CRUD.csprojAssemblyReference.cache
+C:\Users\User\Documents\GitHUD\CRUD\CRUD\obj\Debug\netcoreapp2.2\CRUD.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHUD\CRUD\CRUD\obj\Debug\netcoreapp2.2\CRUD.RazorAssemblyInfo.cache
+C:\Users\User\Documents\GitHUD\CRUD\CRUD\obj\Debug\netcoreapp2.2\CRUD.RazorAssemblyInfo.cs
+C:\Users\User\Documents\GitHUD\CRUD\CRUD\obj\Debug\netcoreapp2.2\CRUD.AssemblyInfoInputs.cache
+C:\Users\User\Documents\GitHUD\CRUD\CRUD\obj\Debug\netcoreapp2.2\CRUD.AssemblyInfo.cs
+C:\Users\User\Documents\GitHUD\CRUD\CRUD\obj\Debug\netcoreapp2.2\CRUD.RazorTargetAssemblyInfo.cache
+C:\Users\User\Documents\GitHUD\CRUD\CRUD\obj\Debug\netcoreapp2.2\CRUD.dll
+C:\Users\User\Documents\GitHUD\CRUD\CRUD\obj\Debug\netcoreapp2.2\CRUD.pdb
